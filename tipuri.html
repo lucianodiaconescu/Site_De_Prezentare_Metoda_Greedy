@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Metoda Greedy</title>
+<link href="css/a.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body background="5.jpg" background-size:100% onload="MM_preloadImages('imagini/d_2.png','imagini/s_2.png')">
+<div class="info" id="info">
+  <h1>Tipuri de probleme & rezolvari</h1>
+  <p><img src="7.jpg" width="306" height="180">Problema rucsacului este o problemă de optimizare combinatorică⁠: Dată fiind o mulțime de elemente, fiecare cu o greutate și o valoare, se determină numărul din fiecare element al mulțimii care poate fi inclus într-o colecție, astfel încât greutatea totală să fie mai mică sau egală cu o anumită limită și valoarea totală să fie cât mai mare. Ea își trage numele de la problema cu care se confruntă cineva care este obligat să umple un rucsac⁠(d) de dimensiune fixă cu elementele cele mai valoroase.
+
+    <br><br>Problema apare adesea în alocarea resurselor⁠ unde există constrângeri financiare și este studiată în domenii cum ar fi combinatorica, informatica, teoria complexității, criptografia, matematicile aplicate și jocurile cu echipe sportive imaginare⁠.
+    
+    <br><br>Problema rucsacului a fost studiată de peste un secol, primele lucrări datând de la 1897. Denumirea „problema rucsacului” datează de la începutul activității matematicianului Tobias Dantzig⁠ (1884–1956), și se referă la problema banală de împachetare a celor mai valoroase sau utile elemente fără a supraîncărca bagajul.
+  <br><br>
+  Rezolvare:<br><br>
+  // Intrare:<br>
+// Valori (stocate în tabloul v)<br>
+// Greutăți (stocate în tabloul w)<br>
+// Număr de elemente distincte (n)<br>
+// Capacitatea rucsacului (W)<br><br>
+
+for j from 0 to W do:<br>
+    m[0, j] := 0<br>
+
+for i from 1 to n do:<br>
+    for j from 0 to W do:<br>
+        if w[i] > j then:<br>
+            m[i, j] := m[i-1, j]<br>
+        else:<br>
+            m[i, j] := max(m[i-1, j], m[i-1, j-w[i]] + v[i])<br>
+  </div>
+  <div class="meniu" id="meniu">
+    <div class="butoane" id="butoane">
+      <div class="butoane_1" id="butoane_1">
+        <div class="buton" id="buton"><a href="index-2.html">Home</a></div>
+        <div class="buton" id="buton"><a href="introducere.html">Introducere</a></div>
+        <div class="buton" id="buton"><a href="euristic.html">Greedy Eurisitc</a></div>
+        <div class="buton" id="buton"><a href="observatii.html">Observatii Metoda Greedy</a></div>
+        <div class="buton" id="buton"><a href="tipuri.html">Tipuri de probleme & rezolvari</a></div>
+       <div class="buton" id="buton"><a href="contact.html">Contact</a></div>
+      </div>
+      <div class="buton" id="buton2"></div>
+    </div>
+  </div>
+  </body>
+  
+  </html>
+  

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>Metoda Greedy</title>
+<link href="css/a.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body background="8.jpg" background-size:100% onload="MM_preloadImages('imagini/d_2.png','imagini/s_2.png')">
+<div class="info" id="info">
+  <h1>Greedy euristic</h1>
+  <p><img src="3.jpg" width="300" height="440">Există probleme pentru care avem nevoie de o rezolvare acceptabilă, chiar dacă singurele soluții demonstrate corecte sunt exponențiale, de multe ori inutile în practică.
+
+    Putem să aplicăm pentru aceste probleme metoda Greedy, obținând soluții neoptime, dar suficient de apropiate de soluția optimă pentru a fi acceptabile. Mai mult, în implementarea algoritmului se pot aplica diverse artificii la alegerea optimului local care pot duce la soluții din ce în ce mai bune, deși nu neapărat optime.
+    
+    Un algoritm care obține o soluție acceptabilă, deși nu neapărat optimă, se numește Greedy euristic.</p>
+  <p>O problemă cu o soluție euristică interesantă este Săritura calului1 (enunț modificat):
+
+    Se consideră o tablă de șah cu n linii și m coloane. La o poziție dată se află un cal de șah, acesta putându-se deplasa pe tablă în modul specific acestei piese de șah (în L). Să se determine o modalitate de parcurgere a tablei de către cal, astfel încât acesta să nu treacă de două ori prin aceeași poziție.</p>
+  <p>Pentru dimensiuni mici ale tablei se poate folosi metoda Backtracking, aceasta determinând o soluție optimă. Dacă dimensiunile tablei sunt mari, metoda Backtracking nu mai poate fi folosită. Putem încerca o strategie Greedy:
+
+    plecăm de la poziția inițială, istart jstart
+    cât timp este posibil
+    alegem o poziție vecină în L cu poziția curentă în care nu am mai fost
+    marcăm poziția aleasă într-un anumit mod și o considerăm poziție curentă</p>
+    <p>Succesul algoritmului Greedy stă în alegerea poziției vecine! Desigur, nu orice metodă duce la parcurgerea completă a tablei. Neexistând un mecanism de întoarcere la o stare anterioară, când nu mai găsim poziție vecină liberă pentru poziția curentă algoritmul se încheie.
+
+      O strategie de succes este să alegem pentru poziția curentă poziția vecină cel mai greu accesibilă la pasul următor – poziția vecină cu număr minim de vecini neparcurși. Teoretic, fiecare poziție de pe tablă are 8 poziții vecini, dar unele sunt în afara tablei, altele sunt deja parcurse, astfel că putem alege dintre cei 8 vecini ai poziției curente un vecin care la rândul său are număr minim de vecini neparcurși.
+      
+      Mai mult, dacă există mai mulți vecini ai poziției curente cu număr minim de vecini neparcurși, putem varia vecinul cu care vom continua: primul găsit, ultimul găsit, cel mai de sus, cel mai de jos, îl alegem aleatoriu, etc., sporind șansele de a realiza o parcurgere completă a tablei.</p>
+</div>
+<div class="meniu" id="meniu">
+  <div class="butoane" id="butoane">
+    <div class="butoane_1" id="butoane_1">
+      <div class="buton" id="buton"><a href="index-2.html">Home</a></div>
+      <div class="buton" id="buton"><a href="introducere.html">Introducere</a></div>
+      <div class="buton" id="buton"><a href="euristic.html">Greedy Eurisitc</a></div>
+      <div class="buton" id="buton"><a href="observatii.html">Observatii Metoda Greedy</a></div>
+      <div class="buton" id="buton"><a href="tipuri.html">Tipuri de probleme & rezolvari</a></div>
+	   <div class="buton" id="buton"><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="buton" id="buton2"></div>
+  </div>
+</div>
+</body>
+
+</html>

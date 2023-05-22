@@ -1,0 +1,112 @@
+#foto {
+	height: 70px;
+	width: 100%;
+	top: 40%;
+	position: absolute;
+}
+#loho p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	color: #000;
+}
+#meniu  a {
+	color: #CCC;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+#meniu  a:hover {
+	text-decoration: underline;
+}
+
+#meniu {
+	height: 120px;
+	width: 100%;
+	background-image: url(../imagini/2.png);
+	background-repeat: repeat-x;
+	position: fixed;
+	bottom: 0px;
+}
+#butoane {
+	height: 65px;
+	width: 100%;
+	margin-top: 25px;
+	background-image: url(../imagini/a.jpg);
+}
+#butoane_1 {
+	height: 65px;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#buton {
+	float: left;
+	height: 45px;
+	color: #CCC;
+	text-align: center;
+	padding-top: 20px;
+	margin-right: 1px;
+	margin-left: 1px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#buton:hover {
+	border-radius: 10px;
+	background-image: url(../imagini/b.jpg);
+}
+#loho {
+	position: absolute;
+	height: 112px;
+	width: 354px;
+	top: 54px;
+	right: 226px;
+}
+
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-attachment: fixed;
+	/* [disabled]background-repeat: no-repeat; */
+	/* [disabled]background-position: center center; */
+	background-size:100%;
+}
+#foto a #d {
+	float: right;
+}
+#foto a #s {
+	float: left;
+}
+#info {
+	border-radius: 10px;
+	width: 860px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	background-image: url(../imagini/c.png);
+	margin-bottom: 150px;
+}
+#info ul li {
+	color: #999;
+}
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFF;
+	border-bottom-width: thin;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCC;
+}
+#info p img {
+	float: left;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #CCC;
+}
